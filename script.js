@@ -6,8 +6,8 @@ if (!dchecker){
 	let div_close = document.createElement('div');
 	div_checker.id = "div_checker";
 	div_close.id = "close";
-	div_checker.style = "z-index: 1000;text-align: center;width: 300px;height: 50px;position: fixed;padding: 5px;background-color: rgb(238, 221, 255);border: 4px solid rgb(121, 34, 204);border-radius: 0px 50px;";
-	div_close.style = "cursor: pointer;text-align: center;border: 4px solid rgb(121,34,204);left: 270px;width: 30px;height: 30px;position: fixed;top: 0px;background-color: rgb(238, 221, 255);border-radius: 20px;";
+	div_checker.style = "z-index: 1000;text-align: center;width: 300px;height: 50px;position: fixed;padding: 5px;background-color: rgb(237 229 245);border: 4px solid rgb(121, 34, 204);border-radius: 0px 50px;";
+	div_close.style = "cursor: pointer;text-align: center;border: 4px solid rgb(121,34,204);left: 270px;width: 30px;height: 30px;position: fixed;top: 0px;background-color: rgb(237 229 245);border-radius: 20px;";
 	div_close.innerHTML =  "<B>x</B>";
 	btn_checker.innerHTML = "Перевірити ціни";
 	btn_checker.id = "checkBtn";
@@ -62,15 +62,14 @@ function getPrice() {
 						<b><i>Доставка</i></b>: ${data[6]}<br><br>`;
 				});
 		
-        console.log(msgblock);	
-        let dchecker = document.getElementById('div_checker');
+        dchecker = document.getElementById('div_checker');
         dchecker.style.height = '300px';
         dchecker.style.width = '450px';
         dchecker.style.textAlign = 'Left';
         dchecker.innerHTML = msgblock;
 		let div_close = document.createElement('div');
 		div_close.id = "close";
-		div_close.style = "cursor: pointer;text-align: center;border: 4px solid rgb(121,34,204);left: 420px;width: 30px;height: 30px;position: fixed;top: 0px;background-color: rgb(238, 221, 255);border-radius: 20px;";
+		div_close.style = "cursor: pointer;text-align: center;border: 4px solid rgb(121,34,204);left: 420px;width: 30px;height: 30px;position: fixed;top: 0px;background-color: rgb(237 229 245);border-radius: 20px;";
 		div_close.innerHTML =  "<B>x</B>";
 		div_close.addEventListener('click',function (){document.getElementById('div_checker').remove();});	
 		dchecker.append(div_close);
