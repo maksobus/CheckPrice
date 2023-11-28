@@ -1,4 +1,4 @@
-let dchecker = document.getElementById('div_checker');
+var dchecker = document.getElementById('div_checker');
 if (!dchecker) {
     let div_checker = document.createElement('div');
     let btn_checker = document.createElement('button');

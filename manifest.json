@@ -11,7 +11,7 @@
   },
   "permissions": ["sidePanel", "tabs", "scripting", "activeTab"],
   "host_permissions": [
-        "https://www.aliexpress.com/*"
+    "https://*.aliexpress.com/*"
     ],
   "icons": {
     "16": "images/icon-16.png",
